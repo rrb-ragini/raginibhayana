@@ -1,0 +1,294 @@
+{
+    "personalInfo": {
+        "name": "Ragini Bhayana",
+        "class": "Class of 2026",
+        "title": "AI Technical Lead | Product Strategist | Finance Analyst",
+        "tagline": "Building AI solutions that ship, strategizing products that scale, and analyzing markets that matter.",
+        "email": "ragini.bhayana99@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/ragini-bhayana-4107451a0/",
+        "github": "https://github.com/rrb-ragini"
+    },
+    "education": [
+        {
+            "degree": "MBA",
+            "institute": "BITS School of Management, Mumbai",
+            "year": "2026",
+            "grade": "Pursuing",
+            "highlights": []
+        },
+        {
+            "degree": "B.Tech (ECE)",
+            "institute": "Guru Gobind Singh Indraprastha University, Dwarka, Delhi",
+            "year": "2023",
+            "grade": "9.2/10",
+            "highlights": [
+                "Rank 2 in Batch",
+                "Rank 1 in 16 Courses"
+            ]
+        },
+        {
+            "degree": "Class XII (CBSE)",
+            "institute": "Modern School, Vasant Vihar, Delhi",
+            "year": "2018",
+            "grade": "90%",
+            "highlights": [
+                "Above 94% in 3/5 subjects"
+            ]
+        },
+        {
+            "degree": "Class X (CBSE)",
+            "institute": "Modern School, Vasant Vihar, Delhi",
+            "year": "2016",
+            "grade": "9.6/10",
+            "highlights": [
+                "10/10 in 3 subjects"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "Supervity.AI",
+            "role": "Global Strategy and Community Catalyst, Intern",
+            "duration": "Feb 2025 - Jun 2025",
+            "location": "Remote",
+            "achievements": [
+                "Led end-to-end delivery of 5 PoCs demo for Deloitte partner clients (Blinkit, Zepto, Purplle, MitraQSR)",
+                "Aligned stakeholder expectations and demonstrated tangible business value across 10+ organizations",
+                "Reduced man-hours by 80% through the implementation of Agentic AI solutions on proprietary tool",
+                "Ensured seamless adoption of Supervity as SaaS for Deloitte through technical integration planning",
+                "Drafted proposals for 7 state governments showcasing Supervity's impact on governance transformation",
+                "Researched to identify AI use-cases at ArcelorMittal, Godfrey Phillips, Cisco, & Capwell Industries",
+                "Accelerated time-to-productivity by 95% by streamlining new hire's access to tools & subscriptions",
+                "Managed AI Agents Academy, enabling 100+ AI enthusiasts to upskill and reskill on Supervity platform"
+            ],
+            "tags": [
+                "Agentic AI",
+                "Client Delivery",
+                "Strategic Partnerships",
+                "Ecosystem Development"
+            ]
+        },
+        {
+            "company": "ChildFund India",
+            "role": "Women Entrepreneurship Program (WEP), Research Intern",
+            "duration": "Dec 2024 - Feb 2025",
+            "location": "Remote",
+            "achievements": [
+                "Evaluated economic, social & sustainability impact through 11+ qualitative in-person interviews",
+                "Conducted quantitative analysis for 14,000+ data points to evaluate economic uplift of supported women",
+                "Supported women reported improved economic stability & increase in financial decision capacity",
+                "Quantitative analysis revealed a low p-value, supporting Ha=significant increase in household income"
+            ],
+            "tags": [
+                "Research",
+                "Impact Analysis",
+                "Quantitative Analysis"
+            ]
+        },
+        {
+            "company": "Nokia Solutions and Networks",
+            "role": "Associate, Cloud and Network Services, Full Time",
+            "duration": "Jun 2023 - Jul 2024",
+            "location": "Bangalore, India",
+            "achievements": [
+                "Demonstrated product improvement by enhancing security for 200+ member team on internal tool",
+                "Achieved project optimization by reducing manual efforts by 90% through automation shell scripts",
+                "Created 2 user-centric deliverables for updating network configuration for in-house Automation tool",
+                "Ensured QA by coordinating with Network Engineers of Fortune 500 telecommunications company",
+                "Achieved 100% accuracy on 100+ 4G and 5G network parameters by analyzing network data metrics",
+                "Enabled client reference by creating 6+ reports detailing network parameter values for 4G & 5G elements",
+                "Trained a subcontractor by conducting 15+ sessions for 17 network elements and 5 advanced tools"
+            ],
+            "tags": [
+                "Product Development",
+                "Automation",
+                "Quality Assurance",
+                "5G Networks"
+            ]
+        },
+        {
+            "company": "Kylo Apps",
+            "role": "Product Intern",
+            "duration": "Jun 2022 - Jul 2022",
+            "location": "Remote",
+            "achievements": [
+                "Improved performance visibility by 50% by building dashboards & automating customer-facing reports",
+                "Enhanced efficiency by 50% while maintaining 80% accuracy through elimination of manual errors"
+            ],
+            "tags": [
+                "Product Development",
+                "Dashboards",
+                "Automation"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Mango Leaves Disease Detection Analysis",
+            "duration": "Jan 2023 - Jul 2023",
+            "description": "Developed an agile product using user research, model selection & execution for disease detection",
+            "achievements": [
+                "Conducted literature survey: comparative analysis of 3 CNN architectures & 10 activation functions",
+                "Achieved 98% accuracy with VGG16 architecture outperforming 29 other image classification models"
+            ],
+            "tags": [
+                "Machine Learning",
+                "CNN",
+                "Computer Vision",
+                "Research"
+            ]
+        },
+        {
+            "title": "Future Proofing LLM Companies, Future of Work and Jobs",
+            "duration": "Aug 2025",
+            "description": "Strategic research on LLM company sustainability and workforce transformation",
+            "achievements": [
+                "Future-proofed for LLM wrapper obsolescence with potential $18M ARR growth & 40% client base expansion",
+                "Mapped upcoming risks & built reskilling pathways achieving 70% employee redeployment by AI-augmented roles"
+            ],
+            "tags": [
+                "Strategy",
+                "LLM",
+                "Future of Work",
+                "Research"
+            ]
+        },
+        {
+            "title": "FirstCry International Marketing",
+            "duration": "Jul 2025",
+            "description": "Go-to-market strategy for international expansion",
+            "achievements": [
+                "Evaluated 3 international markets for sustainable growth & designed omnichannel roadmap & risk mitigation",
+                "Created financial projections & breakeven analysis, securing profitability by year 5 with $30M capital infusion plan"
+            ],
+            "tags": [
+                "GTM Strategy",
+                "International Marketing",
+                "Financial Modeling"
+            ]
+        },
+        {
+            "title": "Alphabet Inc. - Driving Business Innovation",
+            "duration": "Jan 2025",
+            "description": "Corporate finance analysis and valuation",
+            "achievements": [
+                "Benchmarked P/E (25.4x), EV/EBITDA (15.2x), and P/B (5.8x) against peers, assessing relative market position",
+                "Evaluated organic growth by financial modelling $101B operating cash flow, $32B CapEx, and $71B buybacks in 2023"
+            ],
+            "tags": [
+                "Corporate Finance",
+                "Valuation",
+                "Financial Modeling"
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "category": "Case Competition",
+            "title": "SBI Life IdeationX 2.0 - Campus Finalist",
+            "description": "Campus Finalist among 30,000+ participants on increasing insurance penetration %",
+            "year": "2025"
+        },
+        {
+            "category": "Case Competition",
+            "title": "Ace the Case 2024 - Rank 44/907",
+            "description": "SummIT, NMIMS Mumbai in Round 1 for Product Management",
+            "year": "2024"
+        },
+        {
+            "category": "Hackathon",
+            "title": "Data Hackathon - 2nd Position",
+            "description": "BITSoM, evaluated by 3 ABG Group industry retail experts",
+            "year": "2025"
+        },
+        {
+            "category": "Olympiad",
+            "title": "National Fintech Olympiad - Top 0.2%",
+            "description": "IFTA representing BITSoM among 2,000+ colleges",
+            "year": "2024"
+        },
+        {
+            "category": "Professional",
+            "title": "McKinsey Future-of-Work Program",
+            "description": "Problem-solving, effective communication, adaptability, resilience, & digital fluency",
+            "year": "2025"
+        },
+        {
+            "category": "Professional",
+            "title": "Nokia Recognition",
+            "description": "Formal recognition for successful completion of time-sensitive project & rapid skill acquisition. Top 1% to secure job offer at Nokia in 3rd year among 160+ students",
+            "year": "2022-2023"
+        }
+    ],
+    "skills": {
+        "business": [
+            "Market Research",
+            "Problem Structuring (Issues Tree)",
+            "Business Model Canvas",
+            "KPI Development",
+            "Competitive Analysis",
+            "Agile Methodologies",
+            "User Story Mapping",
+            "A/B Testing",
+            "Product Roadmapping"
+        ],
+        "finance": [
+            "Financial Modelling (DCF, LBO, M&A)",
+            "Valuation (Comparables, Precedent Transactions)",
+            "Cost-benefit Analysis",
+            "MIS",
+            "Bloomberg Terminal",
+            "Black-Scholes"
+        ],
+        "technical": [
+            "Python",
+            "Java",
+            "SQL",
+            "Tableau",
+            "Power BI",
+            "Google Analytics",
+            "Excel",
+            "Jira",
+            "Figma",
+            "Confluence",
+            "Visual Basic"
+        ]
+    },
+    "leadership": [
+        {
+            "role": "Academic Committee Member",
+            "organization": "BITSoM",
+            "duration": "2024-2025",
+            "achievements": [
+                "Enhanced learning outcomes in 39+ courses by serving PoC with Programs impacting 100% batch",
+                "Established key external stakeholder relationships by independently managing CFA affiliation",
+                "Facilitating fairness and integrity through implementation of proctoring tool for 320+ students",
+                "Recruited high-performance junior committee of 6/40 from 163 through 8 key evaluation metrics",
+                "1/6 student from batch of 158 to be selected as a member of Academic Committee of BITSoM"
+            ]
+        },
+        {
+            "role": "PM Club Member",
+            "organization": "BITSoM",
+            "duration": "2024-2025",
+            "achievements": [
+                "Secured selection 1/12 from 44 applicants to represent the Product Management Club from batch of 158",
+                "Designed 4+ publications including company primers, interview transcripts & organized wireframe bootcamp",
+                "Mentored 2 buddies in developing product sense through a structured & comprehensive learning roadmap",
+                "Co-hosted inaugural finale of PM national case competition with 3 judge panel from Finzarc & 15+ finalists",
+                "Facilitated rigorous recruitment process for 50+ applicants & onboarding of 12 members from batch of 163",
+                "Revamped official PM Club pitch deck to present achievements & proposals to CXO-level stakeholders"
+            ]
+        },
+        {
+            "role": "Branch Mentor",
+            "organization": "IEEE GGSIPU",
+            "duration": "2021-2023",
+            "achievements": [
+                "Demonstrated project skills by leading 4 cross-functional teams for chapter's Flagship event",
+                "Conducted 30+ interviews to facilitate the expansion of college IEEE chapter into University",
+                "Increased women participation by 50% in coding workshops as VC of Women in Engineering"
+            ]
+        }
+    ]
+}
