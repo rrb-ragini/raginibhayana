@@ -75,9 +75,16 @@ Guidelines:
 
 Answer:""")
         
-        # Create RAG chain
+        # Create retriever
+        self.retriever = self.vector_store.as_retriever(search_kwargs={"k": 4})
+        
+        # Helper function to format retrieved documents
+        def format_docs(docs):
+            return "\n\n".join([doc.page_content for doc in docs])
+        
+        # Create RAG chain using RunnablePassthrough
         self.rag_chain = (
-            {"context": self.vector_store.as_retriever(search_kwargs={"k": 4}), "question": RunnablePassthrough()}
+            {"context": self.retriever | format_docs, "question": RunnablePassthrough()}
             | self.prompt
             | self.llm
             | StrOutputParser()
@@ -95,9 +102,9 @@ Answer:""")
                 # Check if dimensions match
                 index_info = self.pc.describe_index(self.index_name)
                 if index_info.dimension != 1536:
-                    print(f"⚠️  Existing index has wrong dimension ({index_info.dimension}). Deleting and recreating...")
+                    print(f"[WARNING] Existing index has wrong dimension ({index_info.dimension}). Deleting and recreating...")
                     self.pc.delete_index(self.index_name)
-                    print(f"✓ Deleted old index")
+                    print(f"[OK] Deleted old index")
                     # Wait a moment for deletion to complete
                     import time
                     time.sleep(2)
@@ -115,14 +122,14 @@ Answer:""")
                         region=self.pinecone_environment
                     )
                 )
-                print(f"✓ Created new Pinecone index: {self.index_name}")
+                print(f"[OK] Created new Pinecone index: {self.index_name}")
             
             # Connect to index
             self.index = self.pc.Index(self.index_name)
-            print(f"✓ Connected to Pinecone index: {self.index_name}")
+            print(f"[OK] Connected to Pinecone index: {self.index_name}")
             
         except Exception as e:
-            print(f"✗ Error setting up Pinecone index: {e}")
+            print(f"[ERROR] Error setting up Pinecone index: {e}")
             raise
     
     def load_knowledge_base(self, data_file: str):
@@ -164,12 +171,12 @@ Answer:""")
                     metadatas=metadatas
                 )
                 
-                print(f"✓ Indexed {len(texts)} document chunks to Pinecone")
+                print(f"[OK] Indexed {len(texts)} document chunks to Pinecone")
             else:
-                print(f"✓ Index already contains {stats.total_vector_count} vectors")
+                print(f"[OK] Index already contains {stats.total_vector_count} vectors")
                 
         except Exception as e:
-            print(f"✗ Error loading knowledge base: {e}")
+            print(f"[ERROR] Error loading knowledge base: {e}")
             raise
     
     def _prepare_documents(self, resume_data: Dict) -> List[Dict]:
@@ -242,6 +249,7 @@ Answer:""")
     def query(self, question: str) -> Dict:
         """Query the RAG system"""
         try:
+            # Invoke chain with question
             answer = self.rag_chain.invoke(question)
             
             return {
@@ -251,6 +259,8 @@ Answer:""")
             
         except Exception as e:
             print(f"Error querying RAG system: {e}")
+            import traceback
+            traceback.print_exc()
             return {
                 'answer': "I apologize, but I encountered an error processing your question. Please try rephrasing it.",
                 'sources': []

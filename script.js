@@ -150,8 +150,8 @@ const chatInput = document.getElementById('chatInput');
 const sendButton = document.getElementById('sendButton');
 const suggestionButtons = document.querySelectorAll('.suggestion-btn');
 
-// API Configuration
-const API_URL = 'http://localhost:5000/api/chat'; // Update this when backend is deployed
+// Client-side RAG - no backend server needed!
+// Using clientRAG from client-rag.js
 
 // Add message to chat
 function addMessage(content, isUser = false) {
@@ -205,7 +205,7 @@ function removeTypingIndicator() {
   }
 }
 
-// Send message to RAG backend
+// Send message using client-side RAG
 async function sendMessage(message) {
   if (!message.trim()) return;
   
@@ -217,32 +217,24 @@ async function sendMessage(message) {
   // Show typing indicator
   showTypingIndicator();
   
+  // Simulate thinking delay for better UX
+  await new Promise(resolve => setTimeout(resolve, 500));
+  
   try {
-    const response = await fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ message: message })
-    });
-    
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    
-    const data = await response.json();
+    // Query client-side RAG engine
+    const result = clientRAG.query(message);
     
     // Remove typing indicator
     removeTypingIndicator();
     
     // Add bot response
-    addMessage(data.response);
+    addMessage(result.answer);
     
   } catch (error) {
     console.error('Error:', error);
     removeTypingIndicator();
     
-    // Fallback response when backend is not available
+    // Fallback response
     const fallbackResponse = getFallbackResponse(message);
     addMessage(fallbackResponse);
   } finally {
